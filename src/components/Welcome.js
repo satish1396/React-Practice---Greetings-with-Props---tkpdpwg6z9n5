@@ -1,13 +1,14 @@
 // write code for Welcome component hereimport React from "react";
-import '../styles/App.css';
-import Welcome from './Welcome';
+import React from 'react'
 
-const App = () => {
+function Welcome(props) {
   return (
-    <Welcome />
+    <div>
+      <h1>Hey ! {props.name}</h1>
+      <h2>Welcome to Newton School.</h2>
+    </div>
   )
 }
 
-
-export default App;
+export default Welcome
 
